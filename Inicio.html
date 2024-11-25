@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Electromecánica Pony</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a2a3a; /* Fondo oscuro con tono elegante */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #f5f5f5;
+            box-sizing: border-box;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background-color: #34495e; /* Fondo gris oscuro con azul */
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar */
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #e67e22; /* Naranja vibrante */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Subtítulo */
+        p {
+            font-size: 18px;
+            color: #ecf0f1; /* Gris claro */
+            margin-bottom: 30px;
+        }
+
+        /* Estilos de los botones */
+        .btn {
+            background-color: #e67e22; /* Naranja */
+            color: white;
+            font-size: 20px;
+            padding: 15px 40px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d35400; /* Naranja oscuro */
+            transform: scale(1.05); /* Efecto de aumento */
+        }
+
+        /* Fondo de animación sutil */
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1600x900/2c3e50/ffffff?text=Taller+Electromecánica') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* Diseño para móviles (cuando la pantalla es pequeña) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .btn {
+                font-size: 18px;
+                padding: 12px 30px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fondo con imagen y desenfoque -->
+    <div class="background-animation"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Taller Electromecánica Pony</h1>
+        <p> El taller de confianza para servicios electromecánicos de alta calidad y tecnología avanzada.</p>
+
+        <!-- Botones de navegación -->
+        <button class="btn" onclick="window.location.href='Clientes.php'">Gestionar Clientes</button>
+        <button class="btn" onclick="window.location.href='Proveedores.php'">Gestionar Proveedores</button>
+    </div>
+
+</body>
+</html>
